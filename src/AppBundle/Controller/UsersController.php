@@ -323,6 +323,36 @@ class UsersController extends Controller
 
 
     /**
+     * @Route("/user/has-shared")
+     */
+    public function hasSharedAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = json_decode($_POST['param'], true);
+        $entity = $em->getRepository('AppBundle:Users')->find($data['userId']);
+        if($entity){
+            $entity->setHasShared(true);
+            $entity->setSharedOn($data['socialMedia']);
+            $em->flush();
+
+            $userData = $this->get('session')->get('userData');
+            $userData['hasShared'] = true;
+            $this->get('session')->set('userData', $userData);
+            $success = true;
+        }else{
+            $success = false;
+        }
+
+        return new Response(
+            json_encode(
+                array(
+                    'success' => $success,
+                    'privateKey' => $userData['keys']['private'][0]
+                )
+            )
+        );
+    }
+    /**
      * @Route("/user/logout")
      */
     public function logout(){

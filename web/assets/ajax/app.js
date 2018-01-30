@@ -26,3 +26,18 @@ function getUserInfo(id)
 
     return $dfd.promise();
 }
+
+function hasShared(data){
+    $dfd = $.Deferred();
+    $.ajax({
+        url: '/user/has-shared',
+        type: 'post',
+        dataType: 'json',
+        success: function (data) {
+            $dfd.resolve(data);
+        },
+        data: {param: JSON.stringify(data)}
+    });
+
+    return $dfd.promise();
+}
