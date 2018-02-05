@@ -1,0 +1,286 @@
+@font-face {
+  font-family: 'AvenirNextBold';
+  src: url('fonts/avenir-next-bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir-next-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir-next-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/avenir-next-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir-next-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AvenirNextRegular';
+  src: url('fonts/avenir-next-regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir-next-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir-next-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/avenir-next-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir-next-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AvenirNextThin';
+  src: url('fonts/avenir-next-thin.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir-next-thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir-next-thin.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/avenir-next-thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir-next-thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'NovecentoDemiBold';
+  src: url('assets/fonts/Novecentosanswide-DemiBold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/Novecentosanswide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/Novecentosanswide-DemiBold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('assets/fonts/Novecentosanswide-DemiBold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/Novecentosanswide-DemiBold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('assets/fonts/centurygothic-webfont.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/centurygothic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/centurygothic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('assets/fonts/centurygothic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/centurygothic-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'CenturyGothicBold';
+  src: url('assets/fonts/centurygothicbold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/centurygothicbold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/centurygothicbold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('assets/fonts/centurygothicbold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/centurygothicbold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+body {
+	margin: 0 !important;
+	background: #111A2C;
+	background-color: #111A2C !important;
+	font-family: 'AvenirNextRegular' !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.formfield-wrap {
+	float: left;
+	width: 100%;
+	margin-top: 75px;
+}
+
+.formfield-margin {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.register-container {
+	float: left;
+    width: calc(100% - 72px);
+    outline: 1px solid #5799DA;
+    border: 5px solid #111A2C;
+    background: #152D53;
+    padding: 30px;
+    margin-left: 1px;
+    margin-bottom: 125px;
+}
+
+.login-container {
+	float: left;
+    width: calc(100% - 72px);
+    outline: 1px solid #5799DA;
+    border: 5px solid #111A2C;
+    background: #152D53;
+    padding: 30px;
+    margin-left: 1px;
+    margin-bottom: 125px;
+}
+
+.form-group input {
+	float: left;
+    width: calc(100% - 20px);
+    height: 37px;
+    border: 1px solid #0F1C32;
+    line-height: 37px;
+    font-size: 12px;
+    background: #FFFFFF;
+    background-color: #FFFFFF !important;
+    font-family: 'AvenirNextRegular';
+    margin-bottom: 20px;
+}
+
+.form-group label {
+	float: left;
+    width: 100%;
+    font-size: 12px !important;
+    color: #F19F00;
+    margin-bottom: 3px;
+    line-height: 15px !important;
+    font-weight: 300 !important;
+    text-transform: uppercase;
+    font-family: 'AvenirNextRegular';
+}
+
+.submit-btn {
+	background-color: #5799D9 !important;
+	background: #5799D9 !important;
+	float: left !important;
+    width: 100% !important;
+    height: 39px !important;
+    color: #FFFFFF !important;
+    border: none;
+    font-weight: 100;
+    margin-top: 6px;
+    font-family: 'AvenirNextRegular' !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+	background: #F19F00;
+	background-color: #F19F00;
+}
+
+.formtitletag {
+	float: left;
+    width: calc(100% - 40px);
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 0px;
+    background: #5799DA;
+    padding: 10px 20px;
+    margin-top: 45px;
+}
+
+.formlogo {
+	width: 98px;
+	height: 22px;
+	background: url('../images/dashlogo.png');
+	margin: 0 auto;
+}
+
+.dashlogo {
+	width: 98px;
+	height: 22px;
+	background: url('../images/dashlogo.png');
+	float: left;
+	margin-top: 14px;
+}
+
+.register-btn {
+	float: left;
+	width: 200px;
+	background: #F19F00;
+	margin-top: 25px;
+	border: none;
+	height: 39px;
+	line-height: 38px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.warning-box {
+	float: left;
+    width: calc(100% - 40px);
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 0px;
+    background: #F56151;
+    padding: 0px 20px;
+}
+
+.formfield-margin .text-center {
+	color: #FFFFFF !important;
+}
+
+.navbar-inverse {
+	background-color: #111A2C !important;
+	border-color: #111A2C !important;
+	border-bottom: 1px solid #5799DA !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+	
+}
+
+.dash-currentpoint h2 {
+	color: #FFFFFF !important;
+}
+
+.sociallikewrap {
+	width: calc(100% - 20px) !important;
+	padding: 8px 30px 30px 30px !important;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+	margin-bottom: 100px !important;
+}
+
+.sociallike-bottomrevealtext {
+	margin-bottom: 31px !important;
+}
+
+.currentpoints-bluewrap {
+    outline: 1px solid #5799DA !important;
+    border: 5px solid #111A2C !important;
+    background: #152D53 !important;
+    padding: 30px !important;
+    margin-bottom: 25px !important;
+}
+
+.currentpointsmargin {
+	margin-top: 8% !important;
+}
+
+.table-scrollable {
+    width: 100%;
+    outline: 1px solid #5799DA;
+    border: 5px solid #111A2C;
+    background: #152D53;
+    padding: 0 3px;
+    margin-left: 1px;
+    margin-bottom: 25px;
+}
+
+.table-bordered {
+	border: none !important;
+	margin-top: 0 !important;
+}
+
+.table-bordered>thead>tr>th {
+	color: #5799D9 !important;
+}
+
+.table-bordered .sorting {
+	border-right: 1px solid #5799DA !important;
+}
+
+.table-bordered .sorting_desc {
+} 
+
+#points-board-table_info {
+	color: #5799DA;
+}
+
+#points-board-table_filter input {
+	min-width: 200px;
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+	background-color: #eeeeee !important;
+}
+
+.registerprobmessage {
+	float: left;
+    width: calc(100% - 40px);
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 0px;
+    background: #F19F00;
+    padding: 10px 20px;
+}
